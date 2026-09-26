@@ -1,0 +1,191 @@
+{
+ "pause_file": "D:\\isbi\\PAUSE",
+ "jobs": [
+  {
+   "name": "run1_train",
+   "cmd": [
+    "D:\\bench_tmp\\venv\\Scripts\\python.exe",
+    "D:\\isbi\\scripts\\ssl_train.py",
+    "--groups",
+    "D:\\isbi\\data\\groups.csv",
+    "--data-root",
+    "D:\\isbi\\data\\chexpert",
+    "--out",
+    "D:\\isbi\\runs\\run1",
+    "--run",
+    "1",
+    "--seed",
+    "1",
+    "--out-dim",
+    "4096",
+    "--centering",
+    "sk",
+    "--koleo",
+    "0",
+    "--lr-mult",
+    "1.0",
+    "--head-warmup",
+    "0.1",
+    "--head-lr-mult",
+    "10",
+    "--batch",
+    "64",
+    "--n-local",
+    "8",
+    "--workers",
+    "6",
+    "--pause-file",
+    "D:\\isbi\\PAUSE",
+    "--resume",
+    "--init-weights",
+    "D:\\isbi\\data\\dinov2_s_lvd142m.safetensors"
+   ],
+   "done": "D:\\isbi\\runs\\run1\\DONE"
+  },
+  {
+   "name": "run1_extract",
+   "cmd": [
+    "D:\\bench_tmp\\venv\\Scripts\\python.exe",
+    "D:\\isbi\\scripts\\extract_features.py",
+    "--groups",
+    "D:\\isbi\\data\\groups.csv",
+    "--data-root",
+    "D:\\isbi\\data\\chexpert",
+    "--run-dir",
+    "D:\\isbi\\runs\\run1",
+    "--workers",
+    "6",
+    "--pause-file",
+    "D:\\isbi\\PAUSE",
+    "--done-marker",
+    "D:\\isbi\\runs\\run1\\FEATS_DONE"
+   ],
+   "done": "D:\\isbi\\runs\\run1\\FEATS_DONE"
+  },
+  {
+   "name": "report_interim",
+   "done": "D:\\isbi\\results\\REPORT_interim_SENT",
+   "cmd": [
+    "D:\\bench_tmp\\venv\\Scripts\\python.exe",
+    "D:\\isbi\\scripts\\report.py",
+    "interim"
+   ]
+  },
+  {
+   "name": "run2_train",
+   "cmd": [
+    "D:\\bench_tmp\\venv\\Scripts\\python.exe",
+    "D:\\isbi\\scripts\\ssl_train.py",
+    "--groups",
+    "D:\\isbi\\data\\groups.csv",
+    "--data-root",
+    "D:\\isbi\\data\\chexpert",
+    "--out",
+    "D:\\isbi\\runs\\run2",
+    "--run",
+    "2",
+    "--seed",
+    "2",
+    "--out-dim",
+    "4096",
+    "--centering",
+    "sk",
+    "--koleo",
+    "0",
+    "--lr-mult",
+    "1.0",
+    "--head-warmup",
+    "0.1",
+    "--head-lr-mult",
+    "10",
+    "--batch",
+    "64",
+    "--n-local",
+    "8",
+    "--workers",
+    "6",
+    "--pause-file",
+    "D:\\isbi\\PAUSE",
+    "--resume",
+    "--init-weights",
+    "D:\\isbi\\data\\dinov2_s_lvd142m.safetensors"
+   ],
+   "done": "D:\\isbi\\runs\\run2\\DONE"
+  },
+  {
+   "name": "run2_extract",
+   "cmd": [
+    "D:\\bench_tmp\\venv\\Scripts\\python.exe",
+    "D:\\isbi\\scripts\\extract_features.py",
+    "--groups",
+    "D:\\isbi\\data\\groups.csv",
+    "--data-root",
+    "D:\\isbi\\data\\chexpert",
+    "--run-dir",
+    "D:\\isbi\\runs\\run2",
+    "--workers",
+    "6",
+    "--pause-file",
+    "D:\\isbi\\PAUSE",
+    "--done-marker",
+    "D:\\isbi\\runs\\run2\\FEATS_DONE"
+   ],
+   "done": "D:\\isbi\\runs\\run2\\FEATS_DONE"
+  },
+  {
+   "name": "report_final",
+   "done": "D:\\isbi\\results\\REPORT_final_SENT",
+   "cmd": [
+    "D:\\bench_tmp\\venv\\Scripts\\python.exe",
+    "D:\\isbi\\scripts\\report.py",
+    "final"
+   ]
+  },
+  {
+   "name": "a6_proxy_run1",
+   "done": "D:\\isbi\\results\\amendment6\\proxy_head_run1.npz",
+   "cmd": [
+    "D:\\bench_tmp\\venv\\Scripts\\python.exe",
+    "D:\\isbi\\scripts\\head_score.py",
+    "proxy",
+    "--groups",
+    "D:\\isbi\\data\\groups.csv",
+    "--data-root",
+    "D:\\isbi\\data\\chexpert",
+    "--run-dir",
+    "D:\\isbi\\runs\\run1",
+    "--run",
+    "1",
+    "--out",
+    "D:\\isbi\\results\\amendment6\\proxy_head_run1.npz",
+    "--workers",
+    "6",
+    "--pause-file",
+    "D:\\isbi\\PAUSE"
+   ]
+  },
+  {
+   "name": "a6_proxy_run2",
+   "done": "D:\\isbi\\results\\amendment6\\proxy_head_run2.npz",
+   "cmd": [
+    "D:\\bench_tmp\\venv\\Scripts\\python.exe",
+    "D:\\isbi\\scripts\\head_score.py",
+    "proxy",
+    "--groups",
+    "D:\\isbi\\data\\groups.csv",
+    "--data-root",
+    "D:\\isbi\\data\\chexpert",
+    "--run-dir",
+    "D:\\isbi\\runs\\run2",
+    "--run",
+    "2",
+    "--out",
+    "D:\\isbi\\results\\amendment6\\proxy_head_run2.npz",
+    "--workers",
+    "6",
+    "--pause-file",
+    "D:\\isbi\\PAUSE"
+   ]
+  }
+ ]
+}

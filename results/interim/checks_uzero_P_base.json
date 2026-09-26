@@ -1,0 +1,16 @@
+{
+  "run1": {
+    "positive_control_E500_mia_auc": 0.5573079388560158,
+    "positive_control_passed": false,
+    "adaptation_probe_auc_step0_final": [
+      0.7124931813669858,
+      0.7482206321508396
+    ],
+    "adaptation_passed": true,
+    "collapse_knn_auc_step0_final": [
+      0.6287947819059907,
+      0.6549479892288117
+    ],
+    "no_collapse": true
+  }
+}

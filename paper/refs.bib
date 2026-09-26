@@ -1,0 +1,450 @@
+% refs.bib -- ISBI 2027 exposure-audit paper (IEEEbib.bst)
+% Every field below was checked against a primary source (Crossref record for the DOI,
+% publisher / proceedings page, arXiv abstract page, or OpenReview); see
+% refs_verification.md for the URL(s) used per entry.
+% Note: IEEEbib.bst ignores doi / eprint / archivePrefix / url; they are kept as metadata.
+% Author lists longer than 6 are truncated to the first 6 + "others".
+
+% ---------------------------------------------------------------------------
+% Models / methods
+% ---------------------------------------------------------------------------
+
+@article{perezgarcia2025raddino,
+  author        = {Fernando P{\'e}rez-Garc{\'\i}a and Harshita Sharma and Sam Bond-Taylor and others},
+  title         = {Exploring scalable medical image encoders beyond text supervision},
+  journal       = {Nat. Mach. Intell.},
+  volume        = {7},
+  number        = {1},
+  pages         = {119--130},
+  year          = {2025},
+  doi           = {10.1038/s42256-024-00965-w},
+  eprint        = {2401.10815},
+  archivePrefix = {arXiv}
+}
+
+@article{oquab2024dinov2,
+  author        = {Maxime Oquab and Timoth{\'e}e Darcet and Th{\'e}o Moutakanni and others},
+  title         = {{DINOv2}: Learning robust visual features without supervision},
+  journal       = {Trans. Mach. Learn. Res.},
+  year          = {2024},
+  url           = {https://openreview.net/forum?id=a68SUt6zFt},
+  eprint        = {2304.07193},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{caron2021dino,
+  author        = {Mathilde Caron and Hugo Touvron and Ishan Misra and others},
+  title         = {Emerging properties in self-supervised vision transformers},
+  booktitle     = {Proc. ICCV},
+  pages         = {9630--9640},
+  year          = {2021},
+  doi           = {10.1109/ICCV48922.2021.00951},
+  eprint        = {2104.14294},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{sablayrolles2019koleo,
+  author        = {Alexandre Sablayrolles and Matthijs Douze and Cordelia Schmid and others},
+  title         = {Spreading vectors for similarity search},
+  booktitle     = {Proc. ICLR},
+  year          = {2019},
+  url           = {https://openreview.net/forum?id=SkGuG2R5tm},
+  eprint        = {1806.03198},
+  archivePrefix = {arXiv}
+}
+
+% ---------------------------------------------------------------------------
+% Datasets
+% ---------------------------------------------------------------------------
+
+@inproceedings{irvin2019chexpert,
+  author        = {Jeremy Irvin and Pranav Rajpurkar and Michael Ko and others},
+  title         = {{CheXpert}: A large chest radiograph dataset with uncertainty labels and expert comparison},
+  booktitle     = {Proc. AAAI},
+  volume        = {33},
+  pages         = {590--597},
+  year          = {2019},
+  doi           = {10.1609/aaai.v33i01.3301590},
+  eprint        = {1901.07031},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{wang2017chestxray8,
+  author        = {Xiaosong Wang and Yifan Peng and Le Lu and others},
+  title         = {{ChestX-ray8}: Hospital-scale chest {X}-ray database and benchmarks on weakly-supervised classification and localization of common thorax diseases},
+  booktitle     = {Proc. CVPR},
+  pages         = {3462--3471},
+  year          = {2017},
+  doi           = {10.1109/CVPR.2017.369},
+  eprint        = {1705.02315},
+  archivePrefix = {arXiv}
+}
+
+@article{shih2019rsna,
+  author        = {George Shih and Carol C. Wu and Safwan S. Halabi and others},
+  title         = {Augmenting the {National Institutes of Health} chest radiograph dataset with expert annotations of possible pneumonia},
+  journal       = {Radiol. Artif. Intell.},
+  volume        = {1},
+  number        = {1},
+  pages         = {e180041},
+  year          = {2019},
+  doi           = {10.1148/ryai.2019180041}
+}
+
+@article{johnson2019mimiccxr,
+  author        = {Alistair E. W. Johnson and Tom J. Pollard and Seth J. Berkowitz and others},
+  title         = {{MIMIC-CXR}, a de-identified publicly available database of chest radiographs with free-text reports},
+  journal       = {Sci. Data},
+  volume        = {6},
+  number        = {1},
+  pages         = {317},
+  year          = {2019},
+  doi           = {10.1038/s41597-019-0322-0}
+}
+
+@article{saporta2022chexlocalize,
+  author        = {Adriel Saporta and Xiaotong Gui and Ashwin Agrawal and others},
+  title         = {Benchmarking saliency methods for chest {X}-ray interpretation},
+  journal       = {Nat. Mach. Intell.},
+  volume        = {4},
+  number        = {10},
+  pages         = {867--878},
+  year          = {2022},
+  doi           = {10.1038/s42256-022-00536-x}
+}
+
+@article{nguyen2022vindrcxr,
+  author        = {Ha Q. Nguyen and Khanh Lam and Linh T. Le and others},
+  title         = {{VinDr-CXR}: An open dataset of chest {X}-rays with radiologist's annotations},
+  journal       = {Sci. Data},
+  volume        = {9},
+  number        = {1},
+  pages         = {429},
+  year          = {2022},
+  doi           = {10.1038/s41597-022-01498-w},
+  eprint        = {2012.15029},
+  archivePrefix = {arXiv}
+}
+
+@article{bustos2020padchest,
+  author        = {Aurelia Bustos and Antonio Pertusa and Jose-Maria Salinas and others},
+  title         = {{PadChest}: A large chest {X}-ray image dataset with multi-label annotated reports},
+  journal       = {Med. Image Anal.},
+  volume        = {66},
+  pages         = {101797},
+  year          = {2020},
+  doi           = {10.1016/j.media.2020.101797},
+  eprint        = {1901.07441},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{boecking2022biovil,
+  author        = {Benedikt Boecking and Naoto Usuyama and Shruthi Bannur and others},
+  title         = {Making the most of text semantics to improve biomedical vision--language processing},
+  booktitle     = {Proc. ECCV},
+  pages         = {1--21},
+  year          = {2022},
+  doi           = {10.1007/978-3-031-20059-5_1},
+  eprint        = {2204.09817},
+  archivePrefix = {arXiv}
+}
+
+@article{lian2021chestxdet,
+  author        = {Jie Lian and Jingyu Liu and Shu Zhang and others},
+  title         = {A structure-aware relation network for thoracic diseases detection and segmentation},
+  journal       = {IEEE Trans. Med. Imaging},
+  volume        = {40},
+  number        = {8},
+  pages         = {2042--2052},
+  year          = {2021},
+  doi           = {10.1109/TMI.2021.3070847},
+  eprint        = {2104.10326},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{holste2022nihcxrlt,
+  author        = {Gregory Holste and Song Wang and Ziyu Jiang and others},
+  title         = {Long-tailed classification of thorax diseases on chest {X}-ray: A new benchmark study},
+  booktitle     = {Proc. MICCAI Workshop DALI},
+  pages         = {22--32},
+  year          = {2022},
+  doi           = {10.1007/978-3-031-17027-0_3},
+  eprint        = {2208.13365},
+  archivePrefix = {arXiv}
+}
+
+% ---------------------------------------------------------------------------
+% Encoders in the audit table
+% ---------------------------------------------------------------------------
+
+@article{yao2025evax,
+  author        = {Jingfeng Yao and Xinggang Wang and Yuehao Song and others},
+  title         = {{EVA-X}: A foundation model for general chest {X}-ray analysis with self-supervised learning},
+  journal       = {npj Digit. Med.},
+  volume        = {8},
+  number        = {1},
+  pages         = {678},
+  year          = {2025},
+  doi           = {10.1038/s41746-025-02032-z},
+  eprint        = {2405.05237},
+  archivePrefix = {arXiv}
+}
+
+@article{sellergren2025medgemma,
+  author        = {Andrew Sellergren and Sahar Kazemzadeh and Tiam Jaroensri and others},
+  title         = {{MedGemma} technical report},
+  journal       = {arXiv preprint arXiv:2507.05201},
+  year          = {2025},
+  eprint        = {2507.05201},
+  archivePrefix = {arXiv}
+}
+
+@article{codella2024medimageinsight,
+  author        = {Noel C. F. Codella and Ying Jin and Shrey Jain and others},
+  title         = {{MedImageInsight}: An open-source embedding model for general domain medical imaging},
+  journal       = {arXiv preprint arXiv:2410.06542},
+  year          = {2024},
+  eprint        = {2410.06542},
+  archivePrefix = {arXiv}
+}
+
+@article{xu2023elixr,
+  author        = {Shawn Xu and Lin Yang and Christopher Kelly and others},
+  title         = {{ELIXR}: Towards a general purpose {X}-ray artificial intelligence system through alignment of large language models and radiology vision encoders},
+  journal       = {arXiv preprint arXiv:2308.01317},
+  year          = {2023},
+  eprint        = {2308.01317},
+  archivePrefix = {arXiv}
+}
+
+@article{tiu2022chexzero,
+  author        = {Ekin Tiu and Ellie Talius and Pujan Patel and others},
+  title         = {Expert-level detection of pathologies from unannotated chest {X}-ray images via self-supervised learning},
+  journal       = {Nat. Biomed. Eng.},
+  volume        = {6},
+  number        = {12},
+  pages         = {1399--1406},
+  year          = {2022},
+  doi           = {10.1038/s41551-022-00936-9}
+}
+
+@article{zhang2025biomedclip,
+  author        = {Sheng Zhang and Yanbo Xu and Naoto Usuyama and others},
+  title         = {A multimodal biomedical foundation model trained from fifteen million image--text pairs},
+  journal       = {NEJM AI},
+  volume        = {2},
+  number        = {1},
+  year          = {2025},
+  doi           = {10.1056/AIoa2400640},
+  eprint        = {2303.00915},
+  archivePrefix = {arXiv}
+}
+
+@article{ma2025arkplus,
+  author        = {DongAo Ma and Jiaxuan Pang and Michael B. Gotway and others},
+  title         = {A fully open {AI} foundation model applied to chest radiography},
+  journal       = {Nature},
+  volume        = {643},
+  number        = {8071},
+  pages         = {488--498},
+  year          = {2025},
+  doi           = {10.1038/s41586-025-09079-8}
+}
+
+@inproceedings{you2023cxrclip,
+  author        = {Kihyun You and Jawook Gu and Jiyeon Ham and others},
+  title         = {{CXR-CLIP}: Toward large scale chest {X}-ray language-image pre-training},
+  booktitle     = {Proc. MICCAI},
+  pages         = {101--111},
+  year          = {2023},
+  doi           = {10.1007/978-3-031-43895-0_10},
+  eprint        = {2310.13292},
+  archivePrefix = {arXiv}
+}
+
+@article{zhang2023kad,
+  author        = {Xiaoman Zhang and Chaoyi Wu and Ya Zhang and others},
+  title         = {Knowledge-enhanced visual-language pre-training on chest radiology images},
+  journal       = {Nat. Commun.},
+  volume        = {14},
+  number        = {1},
+  pages         = {4542},
+  year          = {2023},
+  doi           = {10.1038/s41467-023-40260-7},
+  eprint        = {2302.14042},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{bannur2023biovilt,
+  author        = {Shruthi Bannur and Stephanie Hyland and Qianchu Liu and others},
+  title         = {Learning to exploit temporal structure for biomedical vision-language processing},
+  booktitle     = {Proc. CVPR},
+  pages         = {15016--15027},
+  year          = {2023},
+  doi           = {10.1109/CVPR52729.2023.01442},
+  eprint        = {2301.04558},
+  archivePrefix = {arXiv}
+}
+
+% ---------------------------------------------------------------------------
+% Memorisation, contamination, membership inference, statistics
+% ---------------------------------------------------------------------------
+
+@inproceedings{meehan2023dejavu,
+  author        = {Casey Meehan and Florian Bordes and Pascal Vincent and others},
+  title         = {Do {SSL} models have d{\'e}j{\`a} vu? {A} case of unintended memorization in self-supervised learning},
+  booktitle     = {Proc. NeurIPS},
+  volume        = {36},
+  pages         = {42775--42798},
+  year          = {2023},
+  doi           = {10.52202/075280-1854},
+  eprint        = {2304.13850},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{wang2024sslmem,
+  author        = {Wenhao Wang and Muhammad Ahmad Kaleem and Adam Dziedzic and others},
+  title         = {Memorization in self-supervised learning improves downstream generalization},
+  booktitle     = {Proc. ICLR},
+  year          = {2024},
+  url           = {https://openreview.net/forum?id=KSjPaXtxP8},
+  eprint        = {2401.12233},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{magar2022contamination,
+  author        = {Inbal Magar and Roy Schwartz},
+  title         = {Data contamination: From memorization to exploitation},
+  booktitle     = {Proc. ACL},
+  pages         = {157--165},
+  year          = {2022},
+  doi           = {10.18653/v1/2022.acl-short.18},
+  eprint        = {2203.08242},
+  archivePrefix = {arXiv}
+}
+
+@article{jiang2024contamination,
+  author        = {Minhao Jiang and Ken Ziyu Liu and Ming Zhong and others},
+  title         = {Investigating data contamination for pre-training language models},
+  journal       = {arXiv preprint arXiv:2401.06059},
+  year          = {2024},
+  eprint        = {2401.06059},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{bordt2025forget,
+  author        = {Sebastian Bordt and Suraj Srinivas and Valentyn Boreiko and others},
+  title         = {How much can we forget about data contamination?},
+  booktitle     = {Proc. ICML},
+  pages         = {4998--5016},
+  year          = {2025},
+  url           = {https://proceedings.mlr.press/v267/bordt25a.html},
+  eprint        = {2410.03249},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{carlini2022lira,
+  author        = {Nicholas Carlini and Steve Chien and Milad Nasr and others},
+  title         = {Membership inference attacks from first principles},
+  booktitle     = {Proc. IEEE Symp. Security and Privacy},
+  pages         = {1897--1914},
+  year          = {2022},
+  doi           = {10.1109/SP46214.2022.9833649},
+  eprint        = {2112.03570},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{shokri2017membership,
+  author        = {Reza Shokri and Marco Stronati and Congzheng Song and others},
+  title         = {Membership inference attacks against machine learning models},
+  booktitle     = {Proc. IEEE Symp. Security and Privacy},
+  pages         = {3--18},
+  year          = {2017},
+  doi           = {10.1109/SP.2017.41},
+  eprint        = {1610.05820},
+  archivePrefix = {arXiv}
+}
+
+@article{lakens2017equivalence,
+  author        = {Dani{\"e}l Lakens},
+  title         = {Equivalence tests: A practical primer for {$t$} tests, correlations, and meta-analyses},
+  journal       = {Soc. Psychol. Personal. Sci.},
+  volume        = {8},
+  number        = {4},
+  pages         = {355--362},
+  year          = {2017},
+  doi           = {10.1177/1948550617697177}
+}
+
+@article{schuirmann1987tost,
+  author        = {Donald J. Schuirmann},
+  title         = {A comparison of the two one-sided tests procedure and the power approach for assessing the equivalence of average bioavailability},
+  journal       = {J. Pharmacokinet. Biopharm.},
+  volume        = {15},
+  number        = {6},
+  pages         = {657--680},
+  year          = {1987},
+  doi           = {10.1007/BF01068419}
+}
+
+@article{xu2026medvlm,
+  author        = {Bruce Changlong Xu and Lan Wu and Alexander Ryu},
+  title         = {A controlled audit of pretraining contamination in public medical vision-language benchmarks},
+  journal       = {arXiv preprint arXiv:2606.10066},
+  year          = {2026},
+  eprint        = {2606.10066},
+  archivePrefix = {arXiv}
+}
+
+@article{zhang2026wsileak,
+  author        = {Wenhao Zhang and Zhongliang Zhou and John Kang and others},
+  title         = {Auditing data leakage in whole-slide image multimodal benchmarks},
+  journal       = {arXiv preprint arXiv:2607.12278},
+  year          = {2026},
+  eprint        = {2607.12278},
+  archivePrefix = {arXiv}
+}
+
+@article{ali2026scfm,
+  author        = {Sarwan Ali},
+  title         = {Auditing pretraining contamination in single-cell foundation model benchmarks},
+  journal       = {arXiv preprint arXiv:2607.20572},
+  year          = {2026},
+  eprint        = {2607.20572},
+  archivePrefix = {arXiv}
+}
+
+@article{wang2026ecgmia,
+  author        = {Ziyu Wang and Elahe Khatibi and Ankita Sharma and others},
+  title         = {Membership inference attacks expose participation privacy in {ECG} foundation encoders},
+  journal       = {arXiv preprint arXiv:2604.10424},
+  year          = {2026},
+  eprint        = {2604.10424},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{liu2021encodermi,
+  author        = {Hongbin Liu and Jinyuan Jia and Wenjie Qu and others},
+  title         = {{EncoderMI}: Membership inference against pre-trained encoders in contrastive learning},
+  booktitle     = {Proc. ACM CCS},
+  pages         = {2081--2095},
+  year          = {2021},
+  doi           = {10.1145/3460120.3484749}
+}
+
+@inproceedings{mayilvahanan2024clip,
+  author        = {Prasanna Mayilvahanan and Thadd{\"a}us Wiedemer and Evgenia Rusak and others},
+  title         = {Does {CLIP}'s generalization performance mainly stem from high train-test similarity?},
+  booktitle     = {Proc. ICLR},
+  year          = {2024},
+  eprint        = {2310.09562},
+  archivePrefix = {arXiv}
+}
+
+@misc{microsoft2024raddinocard,
+  author        = {{Microsoft Health Futures}},
+  title         = {{RAD-DINO} model card},
+  howpublished  = {\url{https://huggingface.co/microsoft/rad-dino}},
+  note          = {Accessed Sep. 2026},
+  year          = {2024}
+}

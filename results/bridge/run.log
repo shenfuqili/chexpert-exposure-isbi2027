@@ -1,0 +1,24 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 19645.66it/s]
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 29896.11it/s]
+{
+  "n_members": 202,
+  "n_nonmembers": 518,
+  "gate_auc": 0.522019190336022,
+  "gate_ci95": [
+    0.47484759818775335,
+    0.5688422161225554
+  ],
+  "gate_passed": true,
+  "mia_auc_calibrated": 0.48146909285523143,
+  "mia_ci95": [
+    0.4331636856385881,
+    0.529017124824072
+  ],
+  "mia_auc_raw_raddino": 0.4709946863412209,
+  "raw_ci95": [
+    0.42322601271878274,
+    0.5178251344973038
+  ],
+  "mde_auc": 0.5670956672314577
+}

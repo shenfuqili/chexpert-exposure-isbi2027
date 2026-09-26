@@ -1,0 +1,11 @@
+{
+  "score": "single-network DINO-head self-distillation (Amendment 6), low-passed to 224 px (Amendment 8)",
+  "n_members": 202,
+  "n_nonmembers": 518,
+  "mia_auc": 0.7131866661569631,
+  "mia_ci95": [
+    0.6719933791487892,
+    0.7520751411747915
+  ],
+  "mde_auc": 0.5670956672314577
+}

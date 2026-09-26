@@ -1,0 +1,17 @@
+{
+  "intensity_statistics": {
+    "auc": 0.4775029626514775,
+    "ci95": [
+      0.43052751236516235,
+      0.5246302251202469
+    ]
+  },
+  "labels14": {
+    "auc": 0.5176421117015176,
+    "ci95": [
+      0.4682038117403969,
+      0.5660192357516362
+    ]
+  },
+  "verdict": "pools not separable by intensity statistics or labels"
+}

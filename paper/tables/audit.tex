@@ -1,0 +1,16 @@
+\begin{table}[t]\centering\scriptsize\setlength{\tabcolsep}{2.4pt}
+\caption{Benchmark exposure of public chest X-ray encoders. M: exposed, verified against a released manifest; S: exposed per stated training data; D: exposed via derivation (RSNA images are NIH images); p: partly (share if computable); St: only the source's training split used (not exposure); N: not a stated source; ?: unclear. $^*$ checked at image level; $^\dagger$ benchmark validation data selected or tuned the checkpoint; $^c$ Ark+ uses the VinDr test list for validation. RAD-DINO and Ark+ released image-level lists, so their rows are the most complete. Other NIH subsets follow the RSNA column; five other encoders show no documented exposure on these benchmarks. The full audit, with sources, is released. Benchmarks: NIH ChestX-ray14~\cite{wang2017chestxray8}, RSNA Pneumonia~\cite{shih2019rsna}, CheXpert (CX)~\cite{irvin2019chexpert}, MIMIC-CXR~\cite{johnson2019mimiccxr}, VinDr-CXR~\cite{nguyen2022vindrcxr}.}\label{tab:audit}
+\begin{tabular}{lcccccc}
+\toprule
+Encoder & NIH & RSNA & CX val & CX test & MIMIC & VinDr \\
+\midrule
+RAD-DINO~\cite{perezgarcia2025raddino} & M & D$^*$$^\dagger$ & M & St$^*$ & St$^*$ & N$^*$$^\dagger$ \\
+EVA-X~\cite{yao2025evax} & St & Dp$^*$\,{\tiny 63--73\%} & St & St & ? & N \\
+MedImageInsight~\cite{codella2024medimageinsight} & Sp$^*$\,{\tiny 45.4\%} & Dp$^*$\,{\tiny 48.5\%} & N & N & St & N \\
+ELIXR~\cite{xu2023elixr} & ? & Dp & N$^\dagger$ & N & St & N \\
+CheXzero~\cite{tiu2022chexzero} & N & N & N$^\dagger$ & N & S & N \\
+Ark{+}~\cite{ma2025arkplus} & St$^*$ & Dp$^*$\,{\tiny 89\%} & St$^*$ & St$^*$ & St$^*$ & St$^*$$^{c}$ \\
+CXR-CLIP~\cite{you2023cxrclip} & ? & Dp\,{\tiny 59--80\%} & St$^\dagger$ & St & St & N \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,14 @@
+# Versions used (Mac analysis environment; the training laptop used torch 2.11 + CUDA 12.8, transformers 5.17)
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+matplotlib==3.10.9
+pillow==12.2.0
+joblib==1.2.0
+torch==2.12.0
+torchvision==0.27.0
+timm==1.0.30
+transformers==5.8.1
+safetensors==0.8.0rc0
+pytest==9.1.1

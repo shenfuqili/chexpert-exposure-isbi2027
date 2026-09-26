@@ -1,0 +1,18 @@
+{
+  "auc_width": 0.5467286593524219,
+  "auc_height": 0.5458541993195457,
+  "modal_size": [
+    2828,
+    2320
+  ],
+  "modal_share_members": 0.6633663366336634,
+  "modal_share_nonmembers": 0.6196911196911197,
+  "n_modal_members": 134,
+  "n_modal_nonmembers": 321,
+  "head_auc_modal_size": 0.7081647835588414,
+  "head_auc_modal_size_ci95": [
+    0.6574416648053246,
+    0.7569391355724294
+  ],
+  "mde_auc_modal_size": 0.5832232964869849
+}

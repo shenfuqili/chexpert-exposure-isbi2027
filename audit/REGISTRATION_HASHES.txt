@@ -1,0 +1,116 @@
+# Registration record (UTC 2026-09-23T13:38:44Z)
+de389f4b3c923a5e49e827cb30532a4d64f499259316c46099fed5b863334a2a  PREREG.md
+baab4b9b33f036deb38298b46095de32e39fbc86ffb7c153f1e160c6ce2db007  audit/rad_dino_training_images.csv
+
+# Amendment 1 recorded (UTC 2026-09-23T13:40:17Z), before any data download or training
+24fd07ab753e1e12456d28fd5c0d019784125b661b63e55d858cec24800efe0c  PREREG.md
+
+# groups.csv generated (UTC 2026-09-23T13:41:26Z) with seed 20260923, before any image download or training
+3ea816f9a105c39f33aec908e470d2c47d6bed59bb7c6da373626bfa40b67d8f  data/groups.csv
+3eb9a72526ef625ed393dcd8bd36d4ef22bb5521bc689b6ece08c08f02b8d407  scripts/assign_groups.py
+
+# Amendment 2 recorded (UTC 2026-09-23T13:54:12Z), before any data download or training
+e87eceb60136fe8ce0e12411b8179a97a3c06d1e45e6d8588d0eb40989d2fbf0  PREREG.md
+16f9bd0014124be80155abe2891dcba5607768f55936c860ce9dced4acc27edb  scripts/analyze.py
+
+# Amendment 3 (clerical) recorded (UTC 2026-09-23T13:54:51Z)
+a553cfbb5cdb040c649fccb7b22f0f98400a0fae65f4d3759300254c70f7a7bc  PREREG.md
+
+# Amendment 4 recorded (UTC 2026-09-23T15:15:27Z), before running the bridge
+f30127baca7927341e25af1daf2d17884c834780c2a0efe56ef86309e9da17a6  PREREG.md
+
+# Decision record (n_local=8) recorded (UTC 2026-09-23T15:26:05Z), before Run 1
+35abc5f4798efb378213f33278f66f5124a0fa0b3d811a99bd9a1c13b157f672  PREREG.md
+420a9dfb787de605796dc9b87b4340b0aa6febecdf268fa80dfde1dc10b0459d  scripts/ssl_train.py
+
+# Amendment 5 (collapse fix + tuning sweep rule) recorded (UTC 2026-09-23T17:00:10Z), before the sweep and before any formal run
+1b734272f1de72836a753ce6702ea8e11da5ce0e14ba685b29306d95c3836ddc  PREREG.md
+4c5f61bcd38a00141fc4cc471f696cc97500e1c601f292a63a380f3d9f1ee3e3  scripts/ssl_train.py
+193ca408292abc88c265e5ba77d7cd9bed05d8918324f6a5ec06e9615c7d24f6  scripts/quick_probe.py
+72d6b233c6c449c3cc7339d674b0a9420ebcb38b94400e445eaeeaf0fe3f9fe7  deploy/make_sweep.py
+
+# Note on pipeline test recorded (UTC 2026-09-23T17:01:33Z)
+9e2a9ccd0565daf632d91487ea94206091e1d98aaf1e18174783a72c279257d9  PREREG.md
+
+# Sweep decision (V4: KoLeo 0) recorded (UTC 2026-09-23T19:12:36Z), before Run 1
+060c2c78c43eca06eb4c805287cc2d804db92121292c9ef65281a68b47ecbd69  PREREG.md
+76d8a7f5cb4e4188759270abdad9f35c8f594d78a74b4e0b11174237c2fa705a  deploy/make_queue.py
+
+# Analysis log + Amendment 6 (exploratory head-based bridge) recorded (UTC 2026-09-25T03:06:43Z), before any computation with RAD-DINO's DINO head
+665f2dc06fdda5860db18d85f74725635f5427d447c3680b1aa725f5a4f96bcd  PREREG.md
+459194938dbe4ad128a7c52fa5854d0c4958d3d90bce064c476d3e87f6fef744  scripts/analyze.py
+39d3fa06a01cf1f754c0ff66a44e436be34f5135befacd7e0a6d1f58d1dbafb4  scripts/archive/analyze_asrun_20260924.py
+21d7ca6703d8d6499f0b3ae64d0e00250c8f46db20f8b30376757b3440d21020  tests/test_analyze.py
+964aa62dfbabc9d36c1b7235b7f8e0d787e53115499f4844e07525493dbf9ddf  deploy/run_reanalysis.ps1
+
+# Progress reporting added (no computed number changes; tests/test_analyze.py::test_progress_ticks_do_not_change_results) and re-analysis restarted at normal priority (UTC 2026-09-25T03:22:54Z)
+8c69ba095b7364b77d4b4818798cadd0ca187d022fdfe90be73a1ac1662088be  scripts/analyze.py
+56a2f873296ced2168b9180db9c895abe580a6ba4e8ffe138cc716981a8c7ed9  tests/test_analyze.py
+3c65ca7a1661490e7301b29b9b2f92f9fe39c70c0d81ab7899fe0aa84326fa16  scripts/dashboard.py
+9ddc5f7d3d90293f030d651e807a9d8df2e4a939477549abb5f63e015ae47656  deploy/run_reanalysis.ps1
+
+# Amendment 6 code after review, recorded before any computation with RAD-DINO's DINO head (UTC 2026-09-25T03:55:22Z)
+6ca1cefd5d5a88b65478888a704e7af1f1223717e8974e19e0889e4274ee86ef  scripts/head_score.py
+3f22d783894fae05186a7799d1e03e7c8e05f71b8dc7182858a7f8b72cdfcea2  tests/test_head_score.py
+fc6c4de26f85c60dd58d15acaeb5b03dad7c49c70f1cfd73e854c37edb48b2e4  scripts/dashboard.py
+4ab15184c11678aaff859ed80dace5476e7dfa1019b59c8381675f896981c2df  deploy/queue_amendment6.json
+5b3599663464ed1054f7777f547db02f518581acc5becdd3eddffc8c507f3778  data/rad_dino/dino_head.safetensors
+
+# Amendment 7 (post hoc negative control for the RAD-DINO head result) recorded (UTC 2026-09-25T04:29:44Z), before any of its checks was computed
+c15bafdb52ba6ad99caf7052ede25e767562b565b866ec260d8130f9581c622a  PREREG.md
+fb960f456f3ae5ffe63504cb20c0988866baa9bb6cba8be7338d591b89022ab8  results/amendment6/raddino_head.json
+f7670cb505e4e55d0498e70fb62d6b63e37f4f7ce476b47dbeac1daee24c37f9  results/amendment6/raddino_head_per_image.csv
+
+# Amendment 7 negative-control code, recorded before the control was computed (UTC 2026-09-25T04:41:26Z); size check already computed: results/amendment7/size_check.json
+cbc133f086409741bbce6bd2999e6c8082ec60c656d4934eb4dd122f47c89567  scripts/head_score.py
+1eec082d68d2416103ab10e3ccffbef2da7389b4b346703063e279ae3f20f65d  tests/test_head_score.py
+e052a9c88f4cad737bf73f9222cd61eac03090fffa1f2e40215553cafe3b3227  scripts/dashboard.py
+8b26620bb37c6617b2f215f3e5f5c07cfe520e0a9cbf32b6664450cbf679e537  deploy/queue_amendment7.json
+e265e277ef865ceb87c817a4fc8733fc9aacea7f675efe75af1d7a8e6f0ce139  results/amendment7/size_check.json
+
+# Amendment 7 summary script, recorded before the control scores exist (UTC 2026-09-25T04:42:34Z)
+744a722d52acc32d01d1b473377859a9dd18c6bf3e16b73b3f24bfa20b3451e3  scripts/amendment7_summary.py
+4aea07e97eabc3324b855ca7fe4af7a935fb40e91c877076d5c747bb4006dfa9  tests/test_amendment7.py
+
+# Amendment 6 proxy calibration computed (UTC 2026-09-25T04:53:12Z); Amendment 7 negative control still running
+aba785a13f1369ec2364e263e133fa1dd856657228a0e79646d1bdbd109e6942  results/amendment6/proxy_head_run1.npz
+fd509a2571a979330c42983f72f9a7de5808ea1d642150c2fa6ef0fcbccfd2b5  results/amendment6/proxy_head_run2.npz
+9d975e368bc3af602c9eed980d432917965a695a94f1d722b331f9978874d8c0  results/amendment6/proxy_head_mia.csv
+
+# Amendment 7 negative control computed; verdict per the registered rule: memorisation (UTC 2026-09-25T05:03:59Z)
+ee5b16284ad6294df2e084323aae455cd9fe9bcbbfbe93d63f4d8aac2ef9592b  results/amendment7/control_scores.csv
+1df1b00625a516d19c934a55bc86e1372aa825657c03d5dc11f0530e1719204d  results/amendment7/summary.json
+
+# Analysis log 2 (deviations and exploratory checks found while writing; no plan change) recorded (UTC 2026-09-26T03:54:02Z)
+15d9964ceb5d12bc2b8a2dca8a22a15cba57caf553feaa40a61815fedc499412  PREREG.md
+d41702fe6e45ae3ef0695439f9f4e84627083f5f5e26cc8bfda08c0ac977abc5  scripts/make_paper_numbers.py
+
+# Amendment 8 (low-pass check of the RAD-DINO head result) recorded (UTC 2026-09-26T03:58:37Z), before the check was computed
+ea6e979873f77f48fb8dec91d93b672b707c9daeaa22e04bddaae7c434426878  PREREG.md
+
+# Amendment 8 computed on the laptop (unfiltered re-run reproduces Amendment 6: AUC 0.7156); low-pass verdict per the registered rule: not explained by detail finer than 224 px (UTC 2026-09-26T04:22:07Z)
+24da76024c020da51f2648a81851081c1a11a8e694d5c8473c272344e3816906  results/amendment8/raddino_head.json
+8aac62ff87d9b0519e7124bbdfe95e93ed06dedc925a6b4517f1a6f3062eda24  results/amendment8/raddino_head_lowpass224.json
+c62e1da33a25d398e650c2c3abcdccde8b2545fa817e89809d14277fef881c5a  results/amendment8/raddino_head_lowpass224_per_image.csv
+9fda15f1a7d70b004be4f01a799af8363b0c6553b356e9902175fb8a3a2bc8c6  scripts/head_score.py
+c86f8995e6aa43e5f7faf5ab7f83fb85a4026e264edd72e7b9510c9cd20dd8d3  deploy/run_amendment8.ps1
+
+# Amendment 9 (null-arm membership AUCs; RAD-DINO pool intensity and label checks) recorded (UTC 2026-09-26T04:43:12Z), before any of its checks was computed
+0b45e5b09e0b4f09aef220f8f527c2302a5cbe1a41ded6c68fa50a6e712db47a  PREREG.md
+
+# Amendment 9 computed: auditor nulls 0.508/0.519 (< 0.52, weak exposure signal per rule); head-score nulls 0.507/0.502; RAD-DINO pools: intensity 0.478, labels 0.518 (< 0.55, not separable) (UTC 2026-09-26T04:48:40Z)
+5d6d456872e8b043d371c5d5726ddf9d6566794430b675f60b41074c0b718a67  results/amendment9/nulls.json
+012b17add870f2fd2457410a948106f436abab0cb8681bad90526de83e73534d  results/amendment9/pools.json
+d299f1531425753ad4fb85ba96f018d4b2b1af822363dfdf90ad7d5e6af2ef8f  results/amendment9/inv_scores.npz
+bf84f778dc64fde4f7ea7381dea2fb60c925f52abeff990e2d7420c8f17a3156  scripts/amendment9_checks.py
+764def99d59e489942f71d696ebfae49545d3c16ad685f2b82d7b371057fc715  tests/test_amendment9.py
+fbc9fa3177bdd708338aa23ec7b69138b1cd1d1338bd6c0e866c1c465c2c3471  deploy/extract_inv_a9.py
+
+# Amendment 10 (matched-exposure crossover) recorded (UTC 2026-09-26T04:49:08Z), before the analysis was run
+e6bd9777b8ec9abadc5cf48f1616965edea428741a2341ac990660018fa507fd  PREREG.md
+
+# Amendment 10 computed: matched-exposure premium -0.45 points, 90% CI [-0.88, -0.01]; verdict per the registered rule: premium above 0.5 points excluded also with matched probes (UTC 2026-09-26T05:17:24Z)
+cf2cb2d08deb78628f05ae32eac172c02b781d8f5d7bcad96d2dc9c9630809d7  results/amendment10/matched.json
+21fcb20c05499fdedd66e60053e024864f618ec529aa3fe7ef8bae1988809ec0  scripts/amendment10_matched.py
+79d9c2d48afeea786aa9a41d7d105d76a04b505e7c4d79a47d64826d26a3e5c5  tests/test_amendment10.py
+4cd2023feacfe6ddb00b832e52f5eeeddfd785da5158a11395994bc0b507d693  deploy/run_amendment10.ps1

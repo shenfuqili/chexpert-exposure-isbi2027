@@ -1,0 +1,30 @@
+{
+  "run1": {
+    "positive_control_E500_mia_auc": 0.5573079388560158,
+    "positive_control_passed": false,
+    "adaptation_probe_auc_step0_final": [
+      0.7066545720434905,
+      0.7411813292595265
+    ],
+    "adaptation_passed": true,
+    "collapse_knn_auc_step0_final": [
+      0.6346215300103367,
+      0.659115599254019
+    ],
+    "no_collapse": true
+  },
+  "run2": {
+    "positive_control_E500_mia_auc": 0.5525249013806707,
+    "positive_control_passed": false,
+    "adaptation_probe_auc_step0_final": [
+      0.7030468868876009,
+      0.7470238570279277
+    ],
+    "adaptation_passed": true,
+    "collapse_knn_auc_step0_final": [
+      0.6382446591876672,
+      0.660495445632275
+    ],
+    "no_collapse": true
+  }
+}
