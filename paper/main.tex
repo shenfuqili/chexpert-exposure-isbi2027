@@ -1,7 +1,8 @@
 % ISBI 2027 - randomized benchmark-exposure study for chest X-ray encoders. Build: latexmk -pdf main.tex
 % Numbers in the results come from scripts (tables/*.tex, numbers.tex); never type them by hand.
 \documentclass{article}
-\usepackage{spconf,amsmath,graphicx,booktabs,xcolor,url}
+\usepackage{spconf,amsmath,graphicx,booktabs,xcolor}
+\usepackage[hyphens]{url}
 \usepackage{enumitem}
 \setlist{nosep, leftmargin=14pt}
 \newcommand{\todo}[1]{\textcolor{red}{[#1]}}
@@ -24,7 +25,7 @@ Chest X-ray foundation encoders are pretrained on hundreds of thousands of publi
 
 An image-only encoder never sees a diagnosis, so this exposure is not label leakage, but it may still raise benchmark scores. Self-supervised vision encoders memorize individual training images~\cite{meehan2023dejavu,wang2024sslmem}, yet the linear-probe train--test gap does not track this memorization~\cite{meehan2023dejavu}. Medical audits found source overlap between benchmarks and pretraining data~\cite{xu2026medvlm} and higher accuracy on patients shared across whole-slide benchmark splits~\cite{zhang2026wsileak}, but such comparisons cannot isolate exposure, because exposed and clean cases differ in other ways too. A controlled re-pretraining of single-cell models showed that membership signals grow with model capacity relative to data~\cite{ali2026scfm}. None of these studies randomizes label-free exposure to isolate its premium in an imaging encoder.
 
-To measure it, we continue DINO pretraining~\cite{caron2021dino,oquab2024dinov2} of a small DINOv2 encoder, the proxy, on CheXpert~\cite{irvin2019chexpert}, with patients assigned at random to arms whose images are seen 0 to 500 times, and compare frozen-encoder probe AUC on exposed and held-out images (Fig.~\ref{fig:overview}). A crossover run exchanges the dose-100 arm with a held-out arm, so every image in the primary contrast is compared with itself. We also ask whether membership scores that a trainer or an outside auditor could compute detect exposure, and apply them to the released RAD-DINO. The analysis plan was hash-logged before training (not publicly registered) and is released with its amendments and logged deviations.
+To measure it, we continue DINO pretraining~\cite{caron2021dino,oquab2024dinov2} of a small DINOv2 encoder, the proxy, on CheXpert~\cite{irvin2019chexpert}, with patients assigned at random to arms whose images are seen 0 to 500 times, and compare frozen-encoder probe AUC on exposed and held-out images (Fig.~\ref{fig:overview}). A crossover run exchanges the dose-100 arm with a held-out arm, so every image in the primary contrast is compared with itself. We also ask whether membership scores that a trainer or an outside auditor could compute detect exposure, and apply them to the released RAD-DINO. The analysis plan was hash-logged before training (not publicly registered); it is released with its amendments, deviations and all code at \url{https://github.com/shenfuqili/chexpert-exposure-isbi2027}.
 
 \begin{figure*}[t]\centering
 \includegraphics[width=\textwidth]{figures/fig1_overview.pdf}
