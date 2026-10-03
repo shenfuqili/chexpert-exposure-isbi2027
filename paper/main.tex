@@ -28,8 +28,8 @@ An image-only encoder never sees a diagnosis, so this exposure is not label leak
 To measure it, we continue DINO pretraining~\cite{caron2021dino,oquab2024dinov2} of a small DINOv2 encoder, the proxy, on CheXpert~\cite{irvin2019chexpert}, with patients assigned at random to arms whose images are seen 0 to 500 times, and compare frozen-encoder probe AUC on exposed and held-out images (Fig.~\ref{fig:overview}). A crossover run exchanges the dose-100 arm with a held-out arm, so every image in the primary contrast is compared with itself. We also ask whether membership scores that a trainer or an outside auditor could compute detect exposure, and apply them to the released RAD-DINO. The analysis plan was hash-logged before training (not publicly registered); it is released with its amendments, deviations and all code at \url{https://github.com/shenfuqili/chexpert-exposure-isbi2027}.
 
 \begin{figure*}[t]\centering
-\includegraphics[width=\textwidth]{figures/fig1_overview.pdf}
-\caption{Overview. (a) Encoders pretrained on collections that contain benchmark test images are evaluated on those benchmarks; RAD-DINO saw each of its training images about 101 times. (b) Patients are assigned at random to arms seen 0 to 500 times; a second run swaps arm A (H\textsubscript{a}) and arm B (E100). (c) We measure the probe-AUC premium and whether exposure is detectable.}\label{fig:overview}
+\includegraphics[width=\textwidth]{figures/fig1_overview_v2.pdf}
+\caption{Study design. Top: patients are assigned at random to arms seen 0 to 500 times in two runs of continued DINO pretraining, the second swapping H\textsubscript{a} and E100; frozen snapshots give the probe-AUC premium and membership scores. Bottom: the same scores on RAD-DINO's CheXpert validation (in its training list) and test images (not).}\label{fig:overview}
 \end{figure*}
 
 \input{tables/audit}

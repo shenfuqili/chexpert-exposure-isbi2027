@@ -45,9 +45,10 @@ Python 3.10 (`pip install -r requirements.txt`). Each script documents its optio
    (the three pre-specified variants are listed in `deploy/run_reanalysis.ps1`).
 5. `scripts/bridge_raddino.py`, `scripts/head_score.py`, `scripts/amendment7_summary.py`,
    `scripts/amendment9_checks.py`, `scripts/amendment10_matched.py` - RAD-DINO analyses and later amendments.
-6. `scripts/make_table1.py`, `scripts/make_fig1.py`, `scripts/make_fig2.py`, `scripts/make_paper_numbers.py`,
+6. `scripts/make_table1.py`, `scripts/make_fig1_v2.py`, `scripts/make_fig2.py`, `scripts/make_paper_numbers.py`,
    then `latexmk -pdf main.tex` in `paper/`. `make_paper_numbers.py` stops if a claim made in the text no longer
-   holds for the result files.
+   holds for the result files. Fig. 1 shows CheXpert images, so its script needs the data above;
+   `scripts/make_fig1.py` drew Fig. 1 of the PDF as first submitted.
 
 `pytest` runs the test suite; the tests that read `results/` need no data.
 
